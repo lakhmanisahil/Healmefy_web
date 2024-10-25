@@ -1,28 +1,37 @@
 const questions = [
-    { question: "What is your child's age?", options: ["Under 1 year", "1-2 years", "3-5 years", "6+ years"], values: [4, 3, 2, 1] },
-    { question: "How many children do you have?", options: ["1", "2", "3", "4 or more"], values: [4, 3, 2, 1] },
-    { question: "How often do you spend time with your child?", options: ["Daily", "A few times a week", "Once a week", "Rarely"], values: [4, 3, 2, 1] },
-    { question: "What kind of activities do you engage in with your child?", options: ["Reading", "Outdoor games", "Crafts", "Watching TV"], values: [4, 3, 3, 2] },
-    { question: "What is your main concern for your child?", options: ["Health", "Education", "Behavior", "Social skills"], values: [4, 3, 3, 2] },
-    { question: "Do you set rules for screen time?", options: ["Yes", "No", "Sometimes", "Never thought about it"], values: [4, 1, 2, 1] },
-    { question: "Do you involve your child in household chores?", options: ["Yes", "No", "Sometimes", "Depends on the task"], values: [4, 1, 3, 2] },
-    { question: "How do you manage your child's tantrums?", options: ["Ignore", "Talk to them", "Punish", "Give in to demands"], values: [2, 4, 2, 1] },
-    { question: "What do you prioritize more?", options: ["Discipline", "Freedom", "Creativity", "Obedience"], values: [4, 2, 3, 3] },
-    { question: "What type of education do you prefer for your child?", options: ["Public school", "Private school", "Homeschooling", "Alternative education"], values: [2, 3, 4, 3] }
+    { question: "Do you feel you understand your child's emotions?", options: ["Yes", "Sometimes", "Rarely", "No"], values: [4, 3, 2, 1] },
+    { question: "How often do you talk with your child about their day?", options: ["Every day", "Weekly", "Monthly", "Never"], values: [4, 3, 2, 1] },
+    { question: "Do you encourage your child to share their feelings?", options: ["Always", "Often", "Sometimes", "Never"], values: [4, 3, 2, 1] },
+    { question: "How involved are you in your child's hobbies?", options: ["Very involved", "Somewhat", "Rarely", "Not at all"], values: [4, 3, 2, 1] },
+    { question: "Do you set aside time specifically for family?", options: ["Yes, daily", "Yes, weekly", "Occasionally", "No"], values: [4, 3, 2, 1] },
+    { question: "Do you listen without interrupting?", options: ["Always", "Mostly", "Sometimes", "Rarely"], values: [4, 3, 2, 1] },
+    { question: "Do you encourage independence in decision-making?", options: ["Always", "Often", "Sometimes", "Never"], values: [4, 3, 2, 1] },
+    { question: "How well do you handle your own stress around your child?", options: ["Very well", "Somewhat", "Not well", "Poorly"], values: [4, 3, 2, 1] },
+    { question: "How do you discipline your child?", options: ["Constructively", "Sometimes calmly", "Often angrily", "Never"], values: [4, 3, 2, 1] },
+    { question: "Do you know your child’s friends?", options: ["Yes, very well", "Somewhat", "Barely", "No"], values: [4, 3, 2, 1] },
+    { question: "Do you help with school-related tasks?", options: ["Always", "Sometimes", "Rarely", "Never"], values: [4, 3, 2, 1] },
+    { question: "Do you encourage self-confidence?", options: ["Always", "Often", "Sometimes", "Never"], values: [4, 3, 2, 1] },
+    { question: "Do you model positive behavior?", options: ["Always", "Often", "Sometimes", "Rarely"], values: [4, 3, 2, 1] },
+    { question: "Do you set boundaries respectfully?", options: ["Always", "Usually", "Sometimes", "Rarely"], values: [4, 3, 2, 1] },
+    { question: "Do you appreciate your child’s efforts?", options: ["Always", "Often", "Sometimes", "Rarely"], values: [4, 3, 2, 1] },
 ];
-
 // Questions for the child
 const childQuestions = [
-    { question: "How often do you feel sad or lonely?", options: ["Never", "Sometimes", "Often", "Always"], values: [4, 3, 2, 1] },
-    { question: "Do you feel safe at home?", options: ["Yes, always", "Mostly", "Rarely", "Never"], values: [4, 3, 2, 1] },
-    { question: "Do you have friends to talk to?", options: ["Yes", "Sometimes", "Rarely", "No"], values: [4, 3, 2, 1] },
-    { question: "Do you feel stressed about school?", options: ["Never", "Sometimes", "Often", "Always"], values: [4, 3, 2, 1] },
-    { question: "How often do you feel anxious or scared?", options: ["Never", "Sometimes", "Often", "Always"], values: [4, 3, 2, 1] },
-    { question: "Do you enjoy time with your family?", options: ["Yes", "Sometimes", "Rarely", "No"], values: [4, 3, 2, 1] },
-    { question: "Do you sleep well?", options: ["Yes", "Mostly", "Sometimes", "No"], values: [4, 3, 2, 1] },
-    { question: "How often do you feel overwhelmed?", options: ["Never", "Sometimes", "Often", "Always"], values: [4, 3, 2, 1] },
-    { question: "Do you feel understood by your parents?", options: ["Yes", "Sometimes", "Rarely", "No"], values: [4, 3, 2, 1] },
-    { question: "Are you able to express your emotions?", options: ["Yes", "Sometimes", "Rarely", "No"], values: [4, 3, 2, 1] }
+    { question: "Do you feel comfortable talking about your feelings?", options: ["Always", "Sometimes", "Rarely", "Never"], values: [4, 3, 2, 1] },
+    { question: "Do you feel listened to by your parents?", options: ["Always", "Sometimes", "Rarely", "Never"], values: [4, 3, 2, 1] },
+    { question: "How often do you feel happy?", options: ["Often", "Sometimes", "Rarely", "Never"], values: [4, 3, 2, 1] },
+    { question: "Do you have a close friend?", options: ["Yes", "A few", "Not really", "No"], values: [4, 3, 2, 1] },
+    { question: "Do you like going to school?", options: ["Yes", "Sometimes", "Rarely", "No"], values: [4, 3, 2, 1] },
+    { question: "Do you feel supported by your parents?", options: ["Always", "Often", "Sometimes", "Never"], values: [4, 3, 2, 1] },
+    { question: "Are you able to talk about worries?", options: ["Always", "Sometimes", "Rarely", "Never"], values: [4, 3, 2, 1] },
+    { question: "How often do you feel stressed?", options: ["Rarely", "Sometimes", "Often", "Always"], values: [1, 2, 3, 4] },
+    { question: "Do you feel appreciated?", options: ["Always", "Mostly", "Sometimes", "Rarely"], values: [4, 3, 2, 1] },
+    { question: "Do you have time for hobbies?", options: ["Yes", "Sometimes", "Rarely", "No"], values: [4, 3, 2, 1] },
+    { question: "Do you feel safe at home?", options: ["Always", "Mostly", "Sometimes", "Rarely"], values: [4, 3, 2, 1] },
+    { question: "Do you get enough rest?", options: ["Always", "Mostly", "Sometimes", "Rarely"], values: [4, 3, 2, 1] },
+    { question: "Do you feel close to your family?", options: ["Very close", "Close", "Somewhat", "Not at all"], values: [4, 3, 2, 1] },
+    { question: "Do you enjoy time with friends?", options: ["Always", "Sometimes", "Rarely", "Never"], values: [4, 3, 2, 1] },
+    { question: "Do you feel relaxed at home?", options: ["Always", "Often", "Sometimes", "Rarely"], values: [4, 3, 2, 1] },
 ];
 
 let currentQuestionIndex = 0;
@@ -86,7 +95,7 @@ function showParentResult() {
     askChildBtn.style.display = "block"; // Always show the option to ask child questions
     
     if (careScore < 50) {
-        resultTips.innerHTML = `<h3>Intensive Parenting Tips</h3>
+        resultTips.innerHTML = `<h3><u>Intensive Parenting Tips<u></h3>
                                 <ul>
                                     <li>Spend more one-on-one quality time with your child to strengthen the bond.</li>
                                     <li>Be extra cautious about your child's emotional needs and provide consistent support.</li>
@@ -94,7 +103,7 @@ function showParentResult() {
                                     <li>Foster a safe and nurturing environment for the child to express themselves.</li>
                                 </ul>`;
     } else {
-        resultTips.innerHTML = `<h3>General Parenting Tips</h3>
+        resultTips.innerHTML = `<h3><u>General Parenting Tips<u></h3>
                                 <ul>
                                     <li>Maintain a consistent schedule for spending time with your child.</li>
                                     <li>Encourage open communication by asking your child how they feel regularly.</li>
